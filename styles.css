@@ -1,0 +1,198 @@
+.memory-control-container{
+  display: flex;
+  height: 30%;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.view-button{
+  display: flex;
+  margin-right: 20%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  cursor: pointer;
+  background: #1B5E20;
+}
+
+
+.display{
+  background-color: black;
+  color: white;
+  height: 100px;
+  width:100%;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+}
+.display > div{
+  width:100%;
+}
+.display .equation-container{
+ 
+  display: flex;
+  height: 40%;
+  font-size: 20px;
+  padding-left: 20px;
+
+}
+.display .equation-line{
+  display: flex;
+  align-items: center;
+}
+.blinker{
+  display: flex;
+  align-items: center;
+}
+.display .answer-line{
+  height: 60%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-left: 20px;
+}
+.buttons-container{
+  background-color: red;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 25px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
+}
+.number-container{
+  width:50%;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.number-container > div{
+  width:30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #BDBDBD;
+  cursor: pointer;
+  
+}
+.operations-container{
+  display: flex;
+  width:35%;
+  height:100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.operations-container > div{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #BDBDBD;
+  cursor: pointer;
+
+}
+.operations-container > .equals{
+  width: 100%;
+}
+.operations-container > div[class="equals depressed"]{
+  color: white;
+}
+.cover{
+  display: none;
+  margin-top: 15%;
+  height: 95%;
+  width: 95%;
+  background-color: orange;
+  background-color: #000000;
+ 
+}
+.cover > .title{
+  color: orange;
+  display: flex;
+  border-bottom: 4px white solid;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.cover > .list-container {
+  color: white;
+  height: 100%;
+  font-size: 20px;
+  overflow-y: auto;
+}
+
+.cover > .list-container > ul > li[class="answer"]{
+  list-style: none;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.cover > .controls{
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.cover > .controls > div {
+  width: 45%;
+  height: 80%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cover > .controls > .clear-button{
+  background: red;
+}
+.cover > .controls > .close-button{
+  background: green;
+}
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+   
+    padding: 10px;
+    flex: 50%;
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+
